@@ -1,0 +1,9 @@
+# Build/tooling — not part of the published site
+node_modules/
+package.json
+package-lock.json
+shoot.js
+
+# Superseded first-pass mockup (2026-07-15). Kept locally; not published, so it
+# cannot be reached at /artifact.html on the live site.
+artifact.html

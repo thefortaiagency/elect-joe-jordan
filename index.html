@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joe Jordan for Fort Wayne Community Schools Board · At-Large</title>
+<meta name="description" content="Joe Jordan — At-Large candidate for the Fort Wayne Community Schools Board. Proven Leadership. Proven Results. Proven Commitment to Children.">
+<style>
+  :root{
+    --navy:#0e2a5e;
+    --navy-2:#16397e;
+    --red:#c8102e;
+    --red-dk:#a20d25;
+    --ink:#141b2b;
+    --paper:#ffffff;
+    --mist:#f3f6fb;
+    --line:#e0e6f0;
+    --muted:#57647d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15;color:var(--navy)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* NAV */
+  header{position:sticky;top:0;z-index:50;background:rgba(14,42,94,.97);backdrop-filter:blur(6px);
+    border-bottom:3px solid var(--red)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:12px;color:#fff;font-family:Georgia,serif;font-weight:bold;font-size:1.15rem}
+  .brand .badge{background:var(--red);color:#fff;width:38px;height:38px;border-radius:50%;
+    display:grid;place-items:center;font-size:1.1rem;font-weight:800}
+  .nav ul{display:flex;gap:24px;list-style:none;align-items:center}
+  .nav ul a{color:#dbe4f2;font-size:.95rem;font-weight:500}
+  .nav ul a:hover{color:#fff}
+  .nav .cta{background:var(--red);color:#fff!important;padding:9px 18px;border-radius:6px;font-weight:700}
+  .nav .cta:hover{background:var(--red-dk)}
+  .menu-btn{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+  @media(max-width:920px){
+    .nav ul{display:none}
+    .menu-btn{display:block}
+  }
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
+    background:radial-gradient(circle,rgba(200,16,46,.28),transparent 70%)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;
+    padding-top:60px;padding-bottom:60px;position:relative;z-index:2}
+  .eyebrow{display:inline-block;background:var(--red);color:#fff;
+    padding:6px 15px;border-radius:6px;font-size:.78rem;font-weight:800;letter-spacing:.08em;
+    text-transform:uppercase;margin-bottom:18px}
+  .hero h1{color:#fff;font-size:3rem;margin-bottom:14px}
+  .hero h1 .em{color:#ff5b6e}
+  .hero .sub{font-size:1.05rem;font-weight:700;color:#ffd7dc;letter-spacing:.02em;margin-bottom:14px;font-style:italic}
+  .hero p.lead{font-size:1.18rem;color:#cdd8ea;max-width:520px;margin-bottom:28px}
+  .btns{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{padding:14px 26px;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;border:0;display:inline-block}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-dk)}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5)}
+  .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .hero-photo{position:relative}
+  .hero-photo img{width:100%;max-width:400px;margin:0 auto;border-radius:12px;display:block;
+    box-shadow:0 24px 60px rgba(0,0,0,.45);border:4px solid rgba(255,255,255,.14)}
+  @media(max-width:920px){
+    .hero .wrap{grid-template-columns:1fr;text-align:center;padding-top:44px}
+    .hero h1{font-size:2.2rem}
+    .hero p.lead{margin-left:auto;margin-right:auto}
+    .btns{justify-content:center}
+    .hero-photo{max-width:320px;margin:8px auto 0}
+  }
+
+  /* VALUE STRIP */
+  .strip{background:var(--red);color:#fff}
+  .strip .wrap{display:flex;justify-content:space-around;gap:24px;padding:22px 24px;flex-wrap:wrap;text-align:center}
+  .strip b{font-family:Georgia,serif;font-size:1.6rem;display:block}
+  .strip span{font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+
+  /* SECTIONS */
+  section{padding:74px 0}
+  .section-mist{background:var(--mist)}
+  .sec-head{text-align:center;max-width:720px;margin:0 auto 46px}
+  .sec-head .kicker{color:var(--red);font-weight:800;letter-spacing:.09em;text-transform:uppercase;font-size:.82rem}
+  .sec-head h2{font-size:2.2rem;margin:8px 0 12px}
+  .sec-head p{color:var(--muted);font-size:1.08rem}
+
+  /* MEET JOE */
+  .meet{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+  .meet img{width:100%;border-radius:12px;box-shadow:0 16px 40px rgba(14,42,94,.20)}
+  .meet h2{font-size:2.1rem;margin-bottom:8px}
+  .meet .role{color:var(--red);font-weight:800;margin-bottom:18px}
+  .meet p{margin-bottom:14px;color:#33415c}
+  .creds{list-style:none;margin-top:18px;display:grid;gap:10px}
+  .creds li{padding-left:28px;position:relative;color:#33415c;font-size:.98rem}
+  .creds li::before{content:"★";position:absolute;left:0;color:var(--red);font-size:1rem}
+  .quote{border-left:4px solid var(--red);background:#fff;padding:18px 22px;margin-top:24px;
+    font-style:italic;color:var(--navy);border-radius:0 8px 8px 0;box-shadow:0 6px 18px rgba(14,42,94,.07)}
+  @media(max-width:920px){.meet{grid-template-columns:1fr}.meet img{max-width:340px;margin:0 auto}}
+
+  /* WHY JOE (reasons) */
+  .reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .reason{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px 26px;
+    border-top:4px solid var(--navy)}
+  .reason h3{font-size:1.2rem;margin-bottom:12px;color:var(--navy)}
+  .reason ul{list-style:none;display:grid;gap:9px}
+  .reason li{padding-left:22px;position:relative;color:#3a465f;font-size:.96rem}
+  .reason li::before{content:"›";position:absolute;left:2px;color:var(--red);font-weight:800;font-size:1.05rem;line-height:1.3}
+  @media(max-width:920px){.reasons{grid-template-columns:1fr}}
+
+  /* PRIORITIES */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px 24px;
+    transition:transform .15s,box-shadow .15s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(14,42,94,.13)}
+  .card .ico{width:52px;height:52px;border-radius:50%;background:var(--acc,var(--navy));color:#fff;
+    display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
+  .card h3{font-size:1.16rem;margin-bottom:12px;color:var(--acc,var(--navy))}
+  .card ul{list-style:none;display:grid;gap:8px}
+  .card li{padding-left:20px;position:relative;color:#48546c;font-size:.94rem}
+  .card li::before{content:"•";position:absolute;left:4px;color:var(--acc,var(--navy));font-weight:800}
+  @media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+  /* BANNER IMAGE */
+  .banner-strip{background:var(--navy)}
+  .banner-strip img{width:100%;display:block;max-width:1316px;margin:0 auto}
+
+  /* PHILOSOPHY */
+  .philosophy{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center}
+  .philosophy h2{color:#fff;font-size:2.1rem;margin-bottom:22px}
+  .philosophy blockquote{font-family:Georgia,serif;font-style:italic;font-size:1.5rem;line-height:1.4;
+    max-width:760px;margin:0 auto 34px;color:#eaf0fb}
+  .philosophy blockquote .accent{color:#ff5b6e}
+  .beliefs{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;max-width:940px;margin:0 auto}
+  .belief{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;
+    padding:18px 12px;font-size:.92rem;font-weight:600;color:#eaf0fb}
+  .belief .st{display:block;color:var(--red);font-size:1.3rem;margin-bottom:6px}
+  .belief .st{color:#ff5b6e}
+  @media(max-width:920px){.beliefs{grid-template-columns:1fr 1fr}.philosophy blockquote{font-size:1.25rem}}
+
+  /* WHY VOTE chips */
+  .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:900px;margin:0 auto}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:30px;padding:11px 20px;
+    font-size:.92rem;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:9px;
+    box-shadow:0 4px 14px rgba(14,42,94,.06)}
+  .chip::before{content:"✔";color:var(--red);font-weight:800}
+
+  /* FLYER */
+  .flyer{display:grid;grid-template-columns:1fr .85fr;gap:44px;align-items:center}
+  .flyer img{width:100%;border-radius:12px;box-shadow:0 18px 44px rgba(14,42,94,.2);border:1px solid var(--line)}
+  .flyer h2{font-size:2rem;margin-bottom:14px}
+  .flyer p{color:var(--muted);margin-bottom:18px}
+  @media(max-width:920px){.flyer{grid-template-columns:1fr}.flyer img{max-width:420px;margin:0 auto}}
+
+  /* DONATE */
+  .donate{background:var(--navy);color:#fff;text-align:center}
+  .donate h2{color:#fff;font-size:2.3rem;margin-bottom:12px}
+  .donate p{color:#cdd8ea;max-width:560px;margin:0 auto 30px;font-size:1.1rem}
+  .amts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+  .amt{background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.25);color:#fff;
+    padding:16px 30px;border-radius:10px;font-size:1.3rem;font-weight:800;font-family:Georgia,serif;cursor:pointer}
+  .amt:hover,.amt.sel{background:var(--red);color:#fff;border-color:var(--red)}
+  .donate .btn-red{font-size:1.15rem;padding:16px 44px}
+  .donate .disclaimer{margin-top:24px;font-size:.78rem;color:#9fb0cc;max-width:620px;margin-left:auto;margin-right:auto}
+  .draftflag{display:inline-block;background:rgba(200,16,46,.18);color:#ff8a97;border:1px dashed var(--red);
+    padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:700;margin-bottom:22px}
+
+  /* GET INVOLVED */
+  .involved{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .involved h2{font-size:2rem;margin-bottom:10px}
+  .involved p{color:var(--muted);margin-bottom:20px}
+  form.signup{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;box-shadow:0 12px 30px rgba(14,42,94,.09)}
+  form.signup label{display:block;font-weight:600;font-size:.88rem;margin:14px 0 6px;color:var(--navy)}
+  form.signup input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:1rem}
+  form.signup input:focus{outline:none;border-color:var(--red)}
+  form.signup .btn-red{margin-top:20px;width:100%;border:0}
+  .vol-list{list-style:none;display:grid;gap:14px}
+  .vol-list li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;gap:14px;align-items:center}
+  .vol-list .n{background:var(--red);color:#fff;min-width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+  @media(max-width:920px){.involved{grid-template-columns:1fr}}
+
+  /* CLOSING BANNER */
+  .closer{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center;padding:56px 0}
+  .closer .star{color:var(--red);letter-spacing:.3em;font-size:.9rem;margin-bottom:10px}
+  .closer h2{color:#fff;font-size:2rem;margin-bottom:10px}
+  .closer p{color:#cdd8ea;max-width:640px;margin:0 auto 6px;font-style:italic}
+  .closer .tags{margin-top:20px;color:#ffd7dc;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.82rem}
+
+  /* FOOTER */
+  footer{background:var(--ink);color:#aeb9cc;padding:40px 0 24px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer a{color:#dbe4f2}
+  footer .paid{margin-top:26px;padding-top:18px;border-top:1px solid #2a344a;font-size:.78rem;color:#7d8aa3;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><span class="badge">JJ</span>Joe Jordan <span style="color:#ff8a97;font-weight:400;font-size:.9rem">· FWCS Board</span></a>
+    <ul>
+      <li><a href="#meet">Meet Joe</a></li>
+      <li><a href="#why">Why Joe</a></li>
+      <li><a href="#priorities">Priorities</a></li>
+      <li><a href="#involved">Get Involved</a></li>
+      <li><a href="#donate" class="cta">Donate</a></li>
+    </ul>
+    <button class="menu-btn">&#9776;</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Fort Wayne Community Schools · Board At-Large</span>
+      <h1>Our Students. Our Community. <span class="em">Our Future.</span></h1>
+      <div class="sub">Proven Leadership. Proven Results. Proven Commitment to Children.</div>
+      <p class="lead">I will work tirelessly to ensure every student in FWCS has the support, resources, and opportunities they need to thrive.</p>
+      <div class="btns">
+        <a href="#donate" class="btn btn-red">Donate to the Campaign</a>
+        <a href="#involved" class="btn btn-ghost">Join the Team</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/poster.jpg" alt="Joe Jordan for FWCS Board — At-Large campaign poster">
+    </div>
+  </div>
+</section>
+
+<!-- VALUE STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div><b>30+</b><span>Years serving youth</span></div>
+    <div><b>President &amp; CEO</b><span>Boys &amp; Girls Clubs of NE Indiana</span></div>
+    <div><b>100%</b><span>Focused on our kids</span></div>
+  </div>
+</div>
+
+<!-- MEET JOE -->
+<section id="meet">
+  <div class="wrap meet">
+    <img src="assets/joe.jpg" alt="Joe Jordan">
+    <div>
+      <span class="sec-head kicker" style="display:block;text-align:left">Who is Joe Jordan?</span>
+      <h2>A lifetime of showing up for Fort Wayne's kids.</h2>
+      <div class="role">President &amp; CEO, Boys &amp; Girls Clubs of Northeast Indiana</div>
+      <p>Joe Jordan is a lifelong Fort Wayne resident and an accomplished community leader with more than 30 years of executive leadership experience dedicated to improving the lives of children and families.</p>
+      <p>He currently serves as President and CEO of the Boys &amp; Girls Clubs of Northeast Indiana, where he has helped expand educational opportunities and youth development programs across the region.</p>
+      <ul class="creds">
+        <li>Bachelor of Science, Business Management — Indiana Institute of Technology</li>
+        <li>Master's Degree, Management — Indiana Wesleyan University</li>
+        <li>BGCA Advanced Executive Leadership graduate</li>
+        <li>Leadership Fort Wayne graduate</li>
+        <li>Named Indiana Boys &amp; Girls Clubs CEO of the Year</li>
+      </ul>
+      <div class="quote">"Every child deserves the opportunity to succeed. Strong schools and strong communities work together to prepare our children for a bright future."</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY JOE -->
+<section id="why" class="section-mist">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Why Joe Jordan</span>
+      <h2>Experienced. Dedicated. Ready to serve.</h2>
+      <p>More than three decades of proven leadership in youth and family development — the exact experience our schools need.</p>
+    </div>
+    <div class="reasons">
+      <div class="reason">
+        <h3>A Lifelong Advocate for Education</h3>
+        <ul>
+          <li>More than three decades serving youth and families.</li>
+          <li>Dedicated to helping young people reach their full potential.</li>
+          <li>Strong advocate for academic achievement, workforce readiness, and character development.</li>
+        </ul>
+      </div>
+      <div class="reason">
+        <h3>Proven Community Leader</h3>
+        <ul>
+          <li>President &amp; CEO of the Boys &amp; Girls Clubs of Northeast Indiana.</li>
+          <li>Serves on numerous local and state boards.</li>
+          <li>Built strong partnerships with schools, businesses, colleges, and community organizations.</li>
+        </ul>
+      </div>
+      <div class="reason">
+        <h3>Experienced Executive</h3>
+        <ul>
+          <li>Over 30 years of executive management experience.</li>
+          <li>Expertise in strategic planning, budgeting, organizational leadership, and team development.</li>
+          <li>Successfully managed multi-million-dollar nonprofit operations and community initiatives.</li>
+        </ul>
+      </div>
+      <div class="reason">
+        <h3>A Record of Success</h3>
+        <ul>
+          <li>Named Indiana Boys &amp; Girls Clubs CEO of the Year.</li>
+          <li>Recipient of regional and national leadership awards.</li>
+          <li>Honored for outstanding service to youth and communities throughout Indiana.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIORITIES -->
+<section id="priorities">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Priorities for FWCS</span>
+      <h2>What I'll fight for on the board</h2>
+      <p>Five priorities to build stronger schools for every Fort Wayne child.</p>
+    </div>
+    <div class="cards">
+      <div class="card" style="--acc:#1b3a8f">
+        <div class="ico">&#128218;</div>
+        <h3>Student Achievement</h3>
+        <ul>
+          <li>Support high academic standards.</li>
+          <li>Strengthen literacy and math outcomes.</li>
+          <li>Ensure every student has access to quality educational opportunities.</li>
+        </ul>
+      </div>
+      <div class="card" style="--acc:#e8791f">
+        <div class="ico">&#128101;</div>
+        <h3>Supporting Teachers &amp; Staff</h3>
+        <ul>
+          <li>Recruit and retain exceptional educators.</li>
+          <li>Promote professional development.</li>
+          <li>Foster a culture of respect and collaboration.</li>
+        </ul>
+      </div>
+      <div class="card" style="--acc:#2e9e4f">
+        <div class="ico">&#128737;</div>
+        <h3>Safe &amp; Supportive Schools</h3>
+        <ul>
+          <li>Prioritize student safety.</li>
+          <li>Expand mental health and wellness resources.</li>
+          <li>Create positive learning environments for all students.</li>
+        </ul>
+      </div>
+      <div class="card" style="--acc:#7a3b9e">
+        <div class="ico">&#128188;</div>
+        <h3>College &amp; Career Readiness</h3>
+        <ul>
+          <li>Strengthen career and technical education.</li>
+          <li>Expand partnerships with local businesses and higher education.</li>
+          <li>Prepare students for college, careers, military service, and entrepreneurship.</li>
+        </ul>
+      </div>
+      <div class="card" style="--acc:#17a2a8">
+        <div class="ico">&#129309;</div>
+        <h3>Family &amp; Community Engagement</h3>
+        <ul>
+          <li>Build stronger partnerships with parents.</li>
+          <li>Increase transparency and accountability.</li>
+          <li>Ensure community voices are heard in district decisions.</li>
+        </ul>
+      </div>
+      <div class="card" style="--acc:var(--red)">
+        <div class="ico">&#11088;</div>
+        <h3>Every Child, Every Future</h3>
+        <ul>
+          <li>Every student can succeed.</li>
+          <li>Education transforms lives.</li>
+          <li>Strong schools build strong communities.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER IMAGE -->
+<div class="banner-strip">
+  <img src="assets/banner.jpg" alt="Joe Jordan for FWCS Board — Please vote, Seat At-Large">
+</div>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+  <div class="wrap">
+    <h2>Leadership Philosophy</h2>
+    <blockquote>"Every child deserves the opportunity to succeed. Strong schools and strong communities work together to prepare our children for a <span class="accent">bright future.</span>"</blockquote>
+    <div class="beliefs">
+      <div class="belief"><span class="st">★</span>Every student can succeed.</div>
+      <div class="belief"><span class="st">★</span>Education transforms lives.</div>
+      <div class="belief"><span class="st">★</span>Collaboration produces better outcomes.</div>
+      <div class="belief"><span class="st">★</span>Fiscal responsibility and accountability matter.</div>
+      <div class="belief"><span class="st">★</span>Strong schools build strong communities.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY VOTE -->
+<section class="section-mist">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Why Vote for Joe Jordan?</span>
+      <h2>The right leader for our schools</h2>
+    </div>
+    <div class="chips">
+      <div class="chip">Proven leader</div>
+      <div class="chip">Over 30 years serving youth and families</div>
+      <div class="chip">Experienced executive and fiscal steward</div>
+      <div class="chip">Champion for educational excellence</div>
+      <div class="chip">Collaborative problem solver</div>
+      <div class="chip">Committed to student success and safe schools</div>
+      <div class="chip">Strengthening the partnership between schools, families, and community</div>
+    </div>
+  </div>
+</section>
+
+<!-- FLYER -->
+<section id="flyer">
+  <div class="wrap flyer">
+    <img src="assets/flyer-full.jpg" alt="Joe Jordan for FWCS Board — full campaign flyer">
+    <div>
+      <span class="sec-head kicker" style="display:block;text-align:left">Share the Campaign</span>
+      <h2>Get the full flyer</h2>
+      <p>Everything about Joe's background, priorities, and vision for Fort Wayne Community Schools — in one page. Print it, share it, or hand it to a neighbor.</p>
+      <div class="btns">
+        <a href="assets/flyer-full.jpg" target="_blank" rel="noopener" class="btn btn-red">View / Download Flyer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section id="donate" class="donate">
+  <div class="wrap">
+    <span class="draftflag">DRAFT · Donate button activates once the campaign committee is registered</span>
+    <h2>Fund the campaign for our kids</h2>
+    <p>Grassroots support is what wins a school board race. Every gift — large or small — helps Joe reach more Fort Wayne families before election day.</p>
+    <div class="amts">
+      <div class="amt">$25</div>
+      <div class="amt sel">$50</div>
+      <div class="amt">$100</div>
+      <div class="amt">$250</div>
+      <div class="amt">Other</div>
+    </div>
+    <div>
+      <button class="btn btn-red" onclick="alert('Placeholder — the live donation form (Anedot) goes here once the committee is set up.')">Donate Now</button>
+    </div>
+    <p class="disclaimer">Contributions are not tax-deductible. Payment processing will be handled by a compliant platform (Anedot) that collects the donor information required by Indiana law. Final disclaimers to be confirmed with the campaign treasurer.</p>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="involved">
+  <div class="wrap involved">
+    <div>
+      <span class="sec-head kicker" style="display:block;text-align:left">Get Involved</span>
+      <h2>It takes a community.</h2>
+      <p>Add your name and we'll keep you posted on the campaign — plus ways to help between now and election day.</p>
+      <ul class="vol-list">
+        <li><span class="n">1</span> Put a yard sign in your yard</li>
+        <li><span class="n">2</span> Share Joe's story with your neighbors</li>
+        <li><span class="n">3</span> Volunteer at an upcoming event</li>
+      </ul>
+    </div>
+    <form class="signup" onsubmit="event.preventDefault();alert('Placeholder — this will connect to the campaign email/text list.');">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="you@email.com" required>
+      <label for="zip">ZIP code</label>
+      <input id="zip" type="text" placeholder="46802" required>
+      <button class="btn btn-red" type="submit">Count Me In</button>
+    </form>
+  </div>
+</section>
+
+<!-- CLOSING BANNER -->
+<div class="closer">
+  <div class="wrap">
+    <div class="star">★ ★ ★</div>
+    <h2>Joe Jordan for FWCS Board · At-Large</h2>
+    <p>Proven Leadership. Committed to Students. Building Stronger Schools for Every Child.</p>
+    <p>"Together, we can ensure that every Fort Wayne Community Schools student has the opportunity to learn, grow, and achieve their full potential."</p>
+    <div class="tags">Experienced ★ Dedicated ★ Focused on Our Youth ★ Ready to Serve</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:#fff;font-family:Georgia,serif;font-size:1.1rem">Joe Jordan for FWCS Board</strong><br>
+      Fort Wayne Community Schools · At-Large
+    </div>
+    <div>
+      Contact: jjordan@bgcfw.org<br>
+      (260) 744-0998
+    </div>
+  </div>
+  <div class="wrap paid">
+    Paid for by the Committee to Elect Joe Jordan. &nbsp;|&nbsp; [Placeholder disclaimer — final wording per Allen County Election Board requirements.]
+  </div>
+</footer>
+
+</body>
+</html>
